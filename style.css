@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('/assets/img.jpg');
+    background-attachment: fixed;
 }
 
 .inner {
@@ -25,9 +26,10 @@ div#container section {
     display: flex;
     justify-content: space-between;
     width: 85%;
+    margin: 30px 0;
     max-width: 960px;
     background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 30px;
+    border-radius: 20px;
     overflow: hidden;
     backdrop-filter: blur(5px);
     box-shadow: 0 2px 5px 0;
@@ -36,6 +38,9 @@ div#container section {
 div#container section article {
     width: 45%;
     background-color: rgb(133, 130, 128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div#container section article h1 {
@@ -52,10 +57,10 @@ div#container section article p {
 
 div#container section article a.btn {
     display: inline-block;
-    padding: 8px 30px;
+    padding: 10px 30px;
     border: #383838 solid 2px;
-    border-radius: 20px;
-    font-size: 15px;
+    border-radius: 18px;
+    font-size: 20px;
     margin-top: 20px;
     font-weight: 700;
     color: #383838;
@@ -98,12 +103,12 @@ nav#socialLogin a {
     border-radius: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 70%;
     box-shadow: 0 2px 5px 0;
     transition: 0.6s all ease;
 }
 
-nav#socialLogin a :hover {
+nav#socialLogin a:hover {
     background-color: rgb(133, 130, 128);
     color: aqua;
 }
@@ -136,7 +141,7 @@ form input[type=password] {
     padding: 10px 15px 8px 30px;
     margin: 5px 0;
     font-size: 18px;
-    border-radius: 20px;
+    border-radius: 16px;
     box-shadow: 0 2px 5px 0;
 }
 
@@ -149,7 +154,7 @@ form button[type=submit] {
     font-size: 20px;
     font-weight: 600;
     padding: 10px 30px;
-    border-radius: 20px;
+    border-radius: 18px;
     box-shadow: 0 2px 5px 0;
     transition: 0.6s all ease;
 }
@@ -157,4 +162,15 @@ form button[type=submit] {
 form button[type=submit]:hover {
     background-color: rgb(133, 130, 128);
     color: aqua;
+}
+
+@media(max-width: 760px) {
+    div#container section {
+        flex-flow: column;
+    }
+
+    div#container section article,
+    div#container section aside {
+        width: 100%;
+    }
 }
