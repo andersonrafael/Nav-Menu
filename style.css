@@ -3,7 +3,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('img.jpg');
+    background-image: url('/assets/img.jpg');
 }
 
 .inner {
@@ -39,12 +39,12 @@ div#container section article {
 div#container section article h1 {
     font-size: 40px;
     font-weight: 700;
-    color: black;
+    color: #383838;
 }
 
 div#container section article p {
     font-size: 20px;
-    color: black;
+    color: #383838;
     margin-top: 5px;
 }
 
@@ -57,14 +57,92 @@ div#container section article a.btn {
     margin-top: 20px;
     font-weight: 700;
     color: #383838;
-    transition: 0.2s all ease;
+    transition: 1s all ease;
 }
 
-div#container section article a.btn :hover {
-    background-color: rgb(232, 6, 6);
-    color: blue;
+div#container section article a.btn:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(133, 130, 128);
 }
 
 div#container section aside {
     width: 55%;
+}
+
+div#container section aside h2 {
+    font-size: 35px;
+    color: #383838;
+    font-weight: 700;
+}
+
+div#container section aside p {
+    font-size: 20px;
+    color: #383838;
+}
+
+nav#socialLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+nav#socialLogin a {
+    width: 50px;
+    height: 50px;
+    background: rgb(237, 242, 240);
+    margin: 0 10px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+nav#socialLogin a.google {
+    background-image: url("/assets/icons8-google-logo.svg");
+}
+
+nav#socialLogin a.github {
+    background-image: url("/assets/icons8-github.svg");
+}
+
+nav#socialLogin a.linkedin {
+    background-image: url("/assets/icons8-linkedin.svg");
+}
+
+form {
+
+    width: 90%;
+    max-width: 350px;
+    margin: 30px auto 0 auto;
+
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=password] {
+    width: calc(100% - 45px);
+    border: none;
+    padding: 10px 15px 8px 30px;
+    margin: 5px 0;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+form button[type=submit] {
+    margin-top: 20px;
+    border: #383838 solid 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: #383838;
+    transition: 1s all ease;
+}
+
+form button[type=submit] :hover {
+    background-color: rgb(133, 130, 128);
+    color: rgba(255, 255, 255, 0.7);
 }
