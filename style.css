@@ -3,7 +3,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('img.jpg');
+    background-image: url('assets/img.jpg');
     background-attachment: fixed;
 }
 
@@ -114,15 +114,15 @@ nav#socialLogin a:hover {
 }
 
 nav#socialLogin a.google {
-    background-image: url("icons8-google-logo.svg");
+    background-image: url("assets/icons8-google-logo.svg");
 }
 
 nav#socialLogin a.github {
-    background-image: url("icons8-github.svg");
+    background-image: url("assets/icons8-github.svg");
 }
 
 nav#socialLogin a.linkedin {
-    background-image: url("icons8-linkedin.svg");
+    background-image: url("assets/icons8-linkedin.svg");
 }
 
 form {
