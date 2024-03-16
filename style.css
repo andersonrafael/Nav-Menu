@@ -59,12 +59,13 @@ div#container section article a.btn {
     margin-top: 20px;
     font-weight: 700;
     color: #383838;
-    transition: 1s all ease;
+    box-shadow: 0 2px 5px 0;
+    transition: 0.6s all ease;
 }
 
 div#container section article a.btn:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    color: rgb(133, 130, 128);
+    background-color: rgb(133, 130, 128);
+    color: aqua;
 }
 
 div#container section aside {
@@ -99,6 +100,12 @@ nav#socialLogin a {
     background-repeat: no-repeat;
     background-size: 60%;
     box-shadow: 0 2px 5px 0;
+    transition: 0.6s all ease;
+}
+
+nav#socialLogin a :hover {
+    background-color: rgb(133, 130, 128);
+    color: aqua;
 }
 
 nav#socialLogin a.google {
@@ -144,7 +151,7 @@ form button[type=submit] {
     padding: 10px 30px;
     border-radius: 20px;
     box-shadow: 0 2px 5px 0;
-    transition: 1s all ease;
+    transition: 0.6s all ease;
 }
 
 form button[type=submit]:hover {
