@@ -1,3 +1,70 @@
-* {
-    text-decoration: none;
+body {
+    background-color: #383838;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('img.jpg');
+}
+
+.inner {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+div#container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#container section {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    max-width: 960px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+div#container section article {
+    width: 45%;
+    background-color: rgb(133, 130, 128);
+}
+
+div#container section article h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+}
+
+div#container section article p {
+    font-size: 20px;
+    color: black;
+    margin-top: 5px;
+}
+
+div#container section article a.btn {
+    display: inline-block;
+    padding: 8px 30px;
+    border: #383838 solid 2px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #383838;
+    transition: 0.2s all ease;
+}
+
+div#container section article a.btn :hover {
+    background-color: rgb(232, 6, 6);
+    color: blue;
+}
+
+div#container section aside {
+    width: 55%;
 }
